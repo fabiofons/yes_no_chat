@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MessageInputField extends StatelessWidget {
-  const MessageInputField({super.key});
+  final ValueChanged<String> onValue;
+
+  const MessageInputField({super.key, required this.onValue});
 
   @override
   Widget build(BuildContext context) {
@@ -20,22 +22,22 @@ class MessageInputField extends StatelessWidget {
         suffixIcon: IconButton(
             onPressed: () {
               final textValue = textController.value.text;
-              print('Valor de la caja de texto: $textValue');
               textController.clear();
+              onValue(textValue);
             },
             icon: const Icon(Icons.send_outlined)));
 
     return TextFormField(
       onTapOutside: (event) {
-        focusNode.unfocus();
+        return focusNode.unfocus();
       },
       controller: textController,
       focusNode: focusNode,
       decoration: inputDecotarion,
       onFieldSubmitted: (value) {
-        print('Submit value: $value');
         textController.clear();
         focusNode.requestFocus();
+        onValue(value);
       },
     );
   }
