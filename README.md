@@ -1,16 +1,23 @@
-# yes_no_app
+## Yes-No Chat
+Chat using the WTF api where we get the answers yes or not when we ask something (using ? at the end of the message)
 
-A new Flutter project.
+### Topics 
+- Gestores de estado
 
-## Getting Started
+- Mappers
 
-This project is a starting point for a Flutter application.
+- Peticiones HTTP
 
-A few resources to get you started if this is your first Flutter project:
+- Dio
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Paquetes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Funciones que retornan valores como callbacks
+
+- Scroll
+
+- Provider
+
+
+### Visual Assets
+<img width="168" alt="image" src="https://github.com/user-attachments/assets/66ce0e6c-f8e2-43ea-a08b-5173fec277ad">
